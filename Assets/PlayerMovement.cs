@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private int direction = 0;
     private Rigidbody _rigidbody;
-    private float Speed = 7.0f;
+    private float Speed = 10.0f;
     
     private void Awake()
     {

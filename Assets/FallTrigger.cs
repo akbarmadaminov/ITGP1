@@ -10,7 +10,7 @@ public class FallTrigger : MonoBehaviour
         var player = other.GetComponent<PlayerMovement>();
         if (player != null)
         {
-            Debug.Log("Game is finished!\nYou lose!");
+            Debug.Log("You lose!");
             player.enabled = false;
         }
     }

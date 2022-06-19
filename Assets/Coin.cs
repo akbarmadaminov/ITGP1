@@ -10,7 +10,9 @@ public class Coin : MonoBehaviour
         var player = other.GetComponent<PlayerMovement>();
         if (player != null)
         {
-            Debug.Log("You gain a coin!");
+            var Player = other.GetComponent<Player>();
+            Player.counter++;
+            Debug.Log("Number of coins: " + Player.counter);
             Destroy(gameObject); 
         }
     }
