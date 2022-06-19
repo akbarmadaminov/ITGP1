@@ -7,9 +7,10 @@ namespace DefaultNamespace
         private void OnTriggerEnter(Collider other)
         {
             var player = other.GetComponent<PlayerMovement>();
+            var Player = other.GetComponent<Player>();
             if (player != null)
             {
-                Debug.Log("Game is finished!\nYou win!");
+                Debug.Log("You win!\nYour score is: " + Player.counter);
                 player.enabled = false;
             }
         }
